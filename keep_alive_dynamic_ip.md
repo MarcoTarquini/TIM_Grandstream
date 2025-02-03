@@ -2,7 +2,7 @@
 
 Nella configurazione degli ATA dietro NAT, il keep-alive ha l'unico compito di evitare:
 - Di dover aprire specifiche porte manualmente sul firewall.
-- Di evitare che il mapping nelle tabelle di NAT scada.
+- Che il mapping nelle tabelle di NAT scada.
 
 **NOTA**: l'intervallo di keep alive non ha nulla a che fare con la scadenza della registrazione SIP, deve
 essere impostato in base alla scadenza del mapping UDP del **proprio** router locale. Il server SIP non chiuderà

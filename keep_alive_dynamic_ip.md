@@ -19,5 +19,8 @@ Bisogna però impostare il Grandsteam come necessario:
 - Per usare STUN: NAT traversal impostato a STUN, STUN server configurato
 - Per usare Via: NAT traversal impostato a keep-alive, impostare *SIP REGISTER Contact Header Use* a WAN
 
+**Nota:** non ho un Grandsteam con il quale provare, ma è possibile che *SIP REGISTER Contact Header Use* serva
+anche con STUN. Se STUN ha problemi, provare non nuoce.
+
 Fonte: https://fibra.click/voip/ (vabbé la damnatio memoriae, però...) e solo perché Technetium mi è simpatico...
 

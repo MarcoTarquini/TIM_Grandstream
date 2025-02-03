@@ -6,8 +6,9 @@ Nella configurazione degli ATA dietro NAT, il keep-alive ha l'unico compito di e
 
 **NOTA**: l'intervallo di keep alive non ha nulla a che fare con la scadenza della registrazione SIP, deve
 essere impostato in base alla scadenza del mapping UDP del **proprio** router locale. Il server SIP non chiuderà
-la connessione fino a che la registrazione non scade, ma non sarà più in grado di contattare l'ATA se il router NAT
-ha eliminato il mapping. Una volta scaduto, una nuova registrazione può avvenire su una porta diversa.
+la connessione (e se è UDP non c'è nessuna "connessione" persistente, solo un IP:porta da contattare) fino a che
+la registrazione non scade, ma non sarà più in grado di contattare l'ATA se il router NAT ha eliminato il mapping.
+Una volta scaduto, una nuova registrazione può avvenire su una porta diversa.
 
 Rimane il problema di indicare al proxy SIP remoto il proprio IP e la propria porta, nel caso di IP e porta dinamica.
 Altrimenti le chiamate in ingresso non funzioneranno. I meccanismi sono sempre gli stessi:
